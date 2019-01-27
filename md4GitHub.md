@@ -1,0 +1,270 @@
+![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-527a03e73899862b1da8a2a3beb5a990.jpg)
+
+禁止转载。
+
+禁止转载是指“禁止转载本文内容”，可以通过超链接的方式分享本文。
+
+<br/>
+
+本文章内容由我在该问题下的回答总结而来：
+
+[https://www.zhihu.com/question/19786618](https://www.zhihu.com/question/19786618)
+
+本文章也存在于 GitHub 仓库：
+
+[https://github.com/pzhlkj6612/ZhihuPost-27871616](https://github.com/pzhlkj6612/ZhihuPost-27871616)
+
+<br/>
+
+注意：
+
+* 当你自己没法解决的时候，请求助于身边有空的、懂电脑的人；
+* 以下内容有难度。
+
+----
+
+# 目录
+
+* 我需要哪些版本的 .NET Framework
+* 我该如何安装 .NET Framework
+* .NET Framework 版本和依赖关系
+* 安装 .NET Framework 4
+* .Net Framework 4.7 相关
+* 在 Windows 10、8.1、8 上安装 .NET Framework 3.5
+* 关于错误 0x800F081F、0x800F0906、0x800F0907（复杂）
+* 其他（杂乱）
+
+----
+
+# 我需要哪些版本的 .NET Framework
+[https://docs.microsoft.com/dotnet/framework/get-started/system-requirements#supported-client-operating-systems](https://docs.microsoft.com/dotnet/framework/get-started/system-requirements#supported-client-operating-systems)
+
+* Windows 10 1809 已预装 4.7.2，可以安装 3.5；
+* Windows 10 1803 已预装 4.7.2，可以安装 3.5；
+* Windows 10 1709 已预装 4.7.1，可以安装 3.5；
+* Windows 10 1703 已预装 4.7，可以安装 3.5、4.7.2；
+* Windows 10 1607 已预装 4.6.2，可以安装 3.5、4.7.2；
+* Windows 10 1511 已预装 4.6.1，可以安装 3.5、4.6.2；
+* Windows 10 1507 已预装 4.6，可以安装 3.5、4.6.2；
+* Windows 8.1 已预装 4.5.1，可以安装 3.5、4.7.2；
+* Windows 8 已预装 4.5，可以安装 3.5、4.6.1；
+* Windows 7 SP1 已预装 3.5.1，可以安装 4.7.2；
+* Windows XP 没有预装 .NET Framework，可以安装 3.5、4.0。
+
+注意：
+
+* 对于 .NET Framework 4.X，如果上述的某版本无法在你的系统上安装，请尝试安装更低的版本，直到安装成功。如果到 4.0 都没有安装成功，请重装系统。
+* Windows 7 不是 SP1 请尽快进行升级，参考：[https://support.microsoft.com/help/15090/windows-7-install-service-pack-1-sp1](https://support.microsoft.com/help/15090/windows-7-install-service-pack-1-sp1)
+* 除非必要，不建议继续使用 Windows XP。
+
+<br/>
+
+# .NET Framework 版本和依赖关系
+[https://docs.microsoft.com/dotnet/framework/migration-guide/versions-and-dependencies](https://docs.microsoft.com/dotnet/framework/migration-guide/versions-and-dependencies)
+
+> ... 每个新版本的 .NET Framework 都会保留早期版本中的功能并会添加新功能。 CLR 由其自己的版本号标识。 虽然 CLR 版本并不总是递增的，但 .NET Framework 版本号在每次发布时都会递增。 例如，.NET Framework 4、4.5 和更高版本包含 CLR 4，而 .NET Framework 2.0、3.0 和 3.5 包含 CLR 2.0。 （没有版本 3 的 CLR。）
+
+[**C**ommon **L**anguage **R**untime](https://docs.microsoft.com/dotnet/standard/clr)
+
+<br/>
+
+# 我该如何安装 .NET Framework
+
+* 对于 .NET Framework 4.X，请参考“安装 .NET Framework 4”部分。
+
+* 对于 .NET Framework 3.5，请参考“在 Windows 8、8.1、10 上安装 .NET Framework 3.5”部分的“在控制面板中启用 .NET Framework 3.5”小节。
+
+<br/>
+
+# 安装 .NET Framework 4
+
+当你运行的程序需要 .NET Framework 4.0 及以上版本的环境，但当前系统中并没有时，会报错：
+
+![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-630dcba5364d2845bb2e7fe94fb0e13d.jpg)
+
+去这里下载安装程序：[https://docs.microsoft.com/dotnet/framework/install/guide-for-developers](https://docs.microsoft.com/dotnet/framework/install/guide-for-developers)
+
+<br/>
+
+# .Net Framework 4.7相关
+
+由于在 Windows 7 SP1、2008 R2 SP1、2012 中可能缺少 D3DCompiler_47.dll，从而导致 4.7 安装失败：
+
+![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-50c47193ff28963e90d09057b46da372.jpg)
+
+解决方法：打上对应操作系统版本的 KB4019990；
+
+详细信息：[https://support.microsoft.com/help/4020302](https://support.microsoft.com/help/4020302)
+
+打上补丁后：
+
+![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-36663f1ec4b9c9fe1de7be1caa1550d8.jpg)
+
+另外，安装 4.7 时最好保证你的系统有一个稳定的 Internet 连接，不然可能会遇到错误：
+
+![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-415656a93a19877065b52df9e9ed6277.jpg)
+
+相关参考（未验证）：
+
+* [http://technet.microsoft.com/library/dn265983.aspx](http://technet.microsoft.com/library/dn265983.aspx)
+* [http://blog.csdn.net/bokutake/article/details/50058763](http://blog.csdn.net/bokutake/article/details/50058763)
+
+<br/>
+
+# 在 Windows 10、8.1、8 上安装 .NET Framework 3.5
+
+微软文档库中**曾经**有过这样一句话：
+
+> 由于安装 .NET Framework 3.5 所必须采用的方法十分复杂，很遗憾不能提供可以独立于 Windows 更新运行的单独的独立安装程序。
+
+也就是说，你需要进行一定的操作才能把 3.5 装好，而不是下载一个安装程序那么简单。
+
+注意：MD5为D481CDA2625D9DD2731A00F482484D86、大小为231MB的“dotnetfx35.exe”并不是 .NET Framework 3.5的离线安装包。
+
+<br/>
+
+先跟着官方文档走：[https://docs.microsoft.com/dotnet/framework/install/dotnet-35-windows-10](https://docs.microsoft.com/dotnet/framework/install/dotnet-35-windows-10)
+
+<br/>
+
+**使用系统镜像安装 .NET Framework 3.5（高级）**
+
+这一节是对《使用部署映像服务和管理 (DISM) 部署 .NET Framework 3.5》（[https://docs.microsoft.com/windows-hardware/manufacture/desktop/deploy-net-framework-35-by-using-deployment-image-servicing-and-management--dism](https://docs.microsoft.com/windows-hardware/manufacture/desktop/deploy-net-framework-35-by-using-deployment-image-servicing-and-management--dism)）的一个我个人的、并不太准确的重写。
+
+如果你无法连接到 Internet ，或是下载进度长时间停止不前，再或者是在前述的步骤中遇到了错误，你可以尝试使用对应操作系统版本的镜像文件来安装 .NET Framework 3.5（在安装完系统后就应立即做这项工作）。
+
+* 双击或右键镜像文件，选择“挂载”（或执行 explorer *.iso），或解压镜像文件，找到 sources\sxs 目录；
+* 按 Win+X，单击“命令提示符 (管理员)”或“Windows PowerShell (管理员)”，在命令行界面下输入以下命令，等待完成即可。
+
+``` batch
+dism /online /Enable-Feature /featurename:netfx3 /All /LimitAccess /source:"X:\sources\sxs"
+```
+
+（“X:\sources\sxs”是你镜像里 sources 目录下 sxs 文件夹的路径；注意符号；可以不区分大小写）
+
+<br/>
+
+下图是在 Windows 8.1 with Update 中进行的安装（使用 Shift+F10 调出 cmd）：
+
+![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-afc45751ba6ca4bc257344cde92619f8.jpg)
+
+<br/>
+
+# 关于错误 0x800F081F、0x800F0906、0x800F0907（复杂）
+
+[https://support.microsoft.com/help/2734782](https://support.microsoft.com/help/2734782)
+
+<br/>
+
+终极的解决方法：重装系统。
+
+<br/>
+
+以下是我自已测试过的情况：
+
+* 0x800F0906
+
+1. 由于未连接到 Internet 或用户中断了下载过程而出错；
+2. 在 Windows 8/8.1，使用系统镜像安装 3.5 时，没有使用“/LimitAccess”参数，但指定的源路径有误，且 Windows Update 出错或未连接到 Internet 而出错；
+3. 由于组策略设置出错而出错（与 0x800F0907 有所不同）。
+
+<br/>
+
+* 0x800F0907
+
+组策略设置禁止。解决方法：组策略(gpedit.msc) - 计算机配置 - 管理模板 - 系统 - 制定可选组件安装和组件修复的设置，改为“未配置”或“已禁用”。
+
+<br/>
+
+* 0x800F081F
+
+1. 使用系统镜像安装 3.5 时，使用了“/LimitAccess”参数，由于指定的源路径有误而出错；
+2. 在 Windows 10，使用系统镜像安装3.5时，没有使用“/LimitAccess”参数，但指定的源路径有误，且 Windows Update 出错或未连接到 Internet 而出错；
+3. 在出现过一次 0x800F081F 后，若指定的源路径不变，无论此时源路径是否正确，都会持续出现该错误。解决方法：重启系统（注销没用）。
+
+\* 出现 0x800F081F，原因包括但不限于：路径输入错误、64位系统指定了32位镜像的源（反过来同样）、源路径所属镜像所包含系统的版本号与当前系统的不等（参考：[Operating System Version](https://docs.microsoft.com/windows/desktop/SysInfo/operating-system-version) ）。
+
+<br/>
+
+* 0x800F081F、0x800F0906
+
+[https://support.microsoft.com/help/3005628](https://support.microsoft.com/help/3005628)
+
+[https://grylewicz.pl/wlaczanie-funkcji-net-3-5-i-blad-0x800f081f-w-windows-8-1/](https://grylewicz.pl/wlaczanie-funkcji-net-3-5-i-blad-0x800f081f-w-windows-8-1/)
+
+在没有其他问题的情况下，给打过 KB2966827 的 Windows 8/Server 2012 或 打过 KB2966828 的 Windows 8.1/Server 2012 R2 第一次安装 3.5 时可能会出错：
+
+![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-2edc574fda1161a93716d84403ff8e46.jpg)
+
+解决方法：打上对应操作系统版本的KB3005628，记得要“以管理员身份运行”；
+
+提示：KB3005628 的作用是删除 KB2966827 或 KB2966828；从 [http://go.microsoft.com/fwlink/?linkid=513775](http://go.microsoft.com/fwlink/?linkid=513775) 与 [http://download.windowsupdate.com/d/msdownload/update/software/crup/2014/10/ndpfixit-kb3005628-x64_deabb35b397a39d1d46e1d8aab99bf66fc40052c.exe](http://download.windowsupdate.com/d/msdownload/update/software/crup/2014/10/ndpfixit-kb3005628-x64_deabb35b397a39d1d46e1d8aab99bf66fc40052c.exe) 下载的“ndpfixit-kb3005628-\*.exe”文件不一样，前者运行时会弹出命令行界面，后者没有任何窗口，但看上去两者功能是相同的；它们在运行时都不弹出任何提示，但一段时间后能发现 KB2966827 或 KB2966828 被删除了。
+
+<br/>
+
+* 另外的情况
+
+如果你猜测你的 Windows Update 出问题了，可以尝试：[https://support.microsoft.com/help/10164](https://support.microsoft.com/help/10164)
+
+<br/>
+
+# 其他（杂乱）
+
+* 操作系统的语言包配置似乎也会影响 .Net Framework 3.5 的安装：  
+[http://winitpro.ru/index.php/2014/10/28/oshibka-0x800f081f-pri-ustanovke-net-framework-3-5-v-windows-8-server-2012/](http://winitpro.ru/index.php/2014/10/28/oshibka-0x800f081f-pri-ustanovke-net-framework-3-5-v-windows-8-server-2012/)
+
+* 在 Windows 8 上即使打了 Windows8-RT-KB4019990-x64.msu，也不能安装 4.7：
+
+![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-7341f6dae3d16d5a40cacc60c23193a4.jpg)
+
+* 在 Microsoft 官方文档中 Windows 8 最高并不支持 4.6.2，但实测可以安装：（稳定性未知，而且我忘了具体要怎么做了）
+
+![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-8e59a1c5f099afaaeb38420b6f54e924.jpg)
+
+* 在 Microsoft 官方文档中 Windows Vista SP2 最高并不支持 4.6.1，但实测可以安装：（稳定性未知）
+
+![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-4acd0223a3f291290c39dad84ed31fa7.jpg)
+
+* 在 Microsoft 官方文档中 Windows Vista 最高并不支持 4.7，经 [@Rayista](https://www.zhihu.com/people/abb1e9c50d0cb03b15812f503df208f6) 测试可以安装：（稳定性未知；需要解压安装程序，运行netfx_Full_x86.exe或netfx_Full_x64.exe安装）
+
+![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-e57c6e226d1b682503147029d0c2401d.jpg)
+
+* 在 Microsoft 官方文档中 Windows 10 1507 最高支持 4.7，但我这边有台 LTSB2015(10.0.10240.17488)不能安装，后来重装了系统：（未知的情况）
+
+![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-91f4a0193012b30e59625c8f61b3c7ba.jpg)
+
+<br/>
+
+看起来 Microsoft Docs 也在不断地被完善，这样是最好的。
+
+<br/>
+
+[@大维克多](https://www.zhihu.com/people/fb7e493cc7006f6bd91161e845962c77) 协助，
+
+[@Wang Chunwei](https://www.zhihu.com/people/3b05b1aa0b80b69dafd6174db94e642b) 、 [@Radow](https://www.zhihu.com/people/e8db6f4700f18306f820c4184452aff1) 指正，
+
+[@远方的记忆](https://www.zhihu.com/people/0b75516aae2a68714c7affb6a2b49984) 提示，
+
+[@Rayista](https://www.zhihu.com/people/abb1e9c50d0cb03b15812f503df208f6) 补充，
+
+[@李夏熙](https://www.zhihu.com/people/a580603e1238b809fcee7b643034d3fe) 提供0x800F081F错误信息：
+
+![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-0315cf4474c4a6f0728e9edc7d5b0dd2.jpg)
+
+[@傅经纬](https://www.zhihu.com/people/c6e2b7029aa83e40e5003a5c16af7181) 提供800F0922错误信息，且网络上有相似问题，
+
+[@墨子 2200MHz](https://www.zhihu.com/people/faf758840a7dfc528c4f620cdddf1460) 整理。
+
+<br/>
+
+原答案发布于：2016.05.20
+
+原答案修改于：2017.07.14
+
+<br/>
+
+发布于：X
+
+修改于：16:36 2019/01/27
+
+禁止转载。
