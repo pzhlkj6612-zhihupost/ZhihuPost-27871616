@@ -18,6 +18,7 @@
 
 注意：
 
+* 你首先应该阅读 [.NET Framework 安装指南 | Microsoft Docs](https://docs.microsoft.com/zh-cn/dotnet/framework/install/)，这是最权威的内容；
 * 当你自己没法解决的时候，请求助于身边有空的、懂电脑的人；
 * 以下内容有难度。
 
@@ -30,7 +31,7 @@
 - [.NET Framework 版本和依赖关系](#net-framework-%E7%89%88%E6%9C%AC%E5%92%8C%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB)
 - [我该如何安装 .NET Framework](#%E6%88%91%E8%AF%A5%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85-net-framework)
 - [安装 .NET Framework 4](#%E5%AE%89%E8%A3%85-net-framework-4)
-- [.Net Framework 4.7相关](#net-framework-47%E7%9B%B8%E5%85%B3)
+- [.Net Framework 4.7 相关](#net-framework-47-%E7%9B%B8%E5%85%B3)
 - [在 Windows 10、8.1、8 上安装 .NET Framework 3.5](#%E5%9C%A8-windows-10818-%E4%B8%8A%E5%AE%89%E8%A3%85-net-framework-35)
 - [关于错误 0x800F081F、0x800F0906、0x800F0907（复杂）](#%E5%85%B3%E4%BA%8E%E9%94%99%E8%AF%AF-0x800f081f0x800f09060x800f0907%E5%A4%8D%E6%9D%82)
 - [其他（杂乱）](#%E5%85%B6%E4%BB%96%E6%9D%82%E4%B9%B1)
@@ -55,8 +56,8 @@
 注意：
 
 * 对于 .NET Framework 4.X，如果上述的某版本无法在你的系统上安装，请尝试安装更低的版本，直到安装成功。如果到 4.0 都没有安装成功，请重装系统。
-* Windows 7 不是 SP1 请尽快进行升级，参考：[https://support.microsoft.com/help/15090/windows-7-install-service-pack-1-sp1](https://support.microsoft.com/help/15090/windows-7-install-service-pack-1-sp1)
-* 除非必要，不建议继续使用 Windows XP。
+* Windows 7 不是 SP1 请尽快升级，参考：[https://support.microsoft.com/help/15090/windows-7-install-service-pack-1-sp1](https://support.microsoft.com/help/15090/windows-7-install-service-pack-1-sp1)
+* 除非有必要，不建议继续使用 Windows XP。
 
 <br/>
 
@@ -71,9 +72,9 @@
 
 # 我该如何安装 .NET Framework
 
-* 对于 .NET Framework 4.X，请参考“安装 .NET Framework 4”部分。
+* 对于 .NET Framework 4.X，请参考“安装 .NET Framework 4”部分；
 
-* 对于 .NET Framework 3.5，请参考“在 Windows 8、8.1、10 上安装 .NET Framework 3.5”部分的“在控制面板中启用 .NET Framework 3.5”小节。
+* 对于 .NET Framework 3.5，请参考“在 Windows 10、8.1、8 上安装 .NET Framework 3.5”部分。
 
 <br/>
 
@@ -87,7 +88,7 @@
 
 <br/>
 
-# .Net Framework 4.7相关
+# .Net Framework 4.7 相关
 
 由于在 Windows 7 SP1、2008 R2 SP1、2012 中可能缺少 D3DCompiler_47.dll，从而导致 4.7 安装失败：
 
@@ -101,7 +102,7 @@
 
 ![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-36663f1ec4b9c9fe1de7be1caa1550d8.jpg)
 
-另外，安装 4.7 时最好保证你的系统有一个稳定的 Internet 连接，不然可能会遇到错误：
+另外，安装 4.7 时最好确保你的系统有一个稳定的 Internet 连接，不然可能会遇到错误：
 
 ![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-415656a93a19877065b52df9e9ed6277.jpg)
 
@@ -120,17 +121,17 @@
 
 也就是说，你需要进行一定的操作才能把 3.5 装好，而不是下载一个安装程序那么简单。
 
-注意：MD5为D481CDA2625D9DD2731A00F482484D86、大小为231MB的“dotnetfx35.exe”并不是 .NET Framework 3.5的离线安装包。
+注意：MD5 为 D481CDA2625D9DD2731A00F482484D86、大小为 231 MB 的“dotnetfx35.exe”并不是 .NET Framework 3.5 的离线安装包。
 
 <br/>
 
-先跟着官方文档走：[https://docs.microsoft.com/dotnet/framework/install/dotnet-35-windows-10](https://docs.microsoft.com/dotnet/framework/install/dotnet-35-windows-10)
+跟着官方文档走：[https://docs.microsoft.com/dotnet/framework/install/dotnet-35-windows-10](https://docs.microsoft.com/dotnet/framework/install/dotnet-35-windows-10)
 
 <br/>
 
-**使用系统镜像安装 .NET Framework 3.5（高级）**
+**\* 使用系统镜像安装 .NET Framework 3.5（高级）**
 
-这一节是对《使用部署映像服务和管理 (DISM) 部署 .NET Framework 3.5》（[https://docs.microsoft.com/windows-hardware/manufacture/desktop/deploy-net-framework-35-by-using-deployment-image-servicing-and-management--dism](https://docs.microsoft.com/windows-hardware/manufacture/desktop/deploy-net-framework-35-by-using-deployment-image-servicing-and-management--dism)）的一个我个人的、并不太准确的重写。
+这一节是对《使用部署映像服务和管理 (DISM) 部署 .NET Framework 3.5》（[https://docs.microsoft.com/windows-hardware/manufacture/desktop/deploy-net-framework-35-by-using-deployment-image-servicing-and-management--dism](https://docs.microsoft.com/windows-hardware/manufacture/desktop/deploy-net-framework-35-by-using-deployment-image-servicing-and-management--dism)）基于我个人理解、并不太准确但可以用的重写。
 
 如果你无法连接到 Internet ，或是下载进度长时间停止不前，再或者是在前述的步骤中遇到了错误，你可以尝试使用对应操作系统版本的镜像文件来安装 .NET Framework 3.5（在安装完系统后就应立即做这项工作）。
 
@@ -142,8 +143,6 @@ dism /online /Enable-Feature /featurename:netfx3 /All /LimitAccess /source:"X:\s
 ```
 
 （“X:\sources\sxs”是你镜像里 sources 目录下 sxs 文件夹的路径；注意符号；可以不区分大小写）
-
-<br/>
 
 下图是在 Windows 8.1 with Update 中进行的安装（使用 Shift+F10 调出 cmd）：
 
@@ -158,8 +157,6 @@ dism /online /Enable-Feature /featurename:netfx3 /All /LimitAccess /source:"X:\s
 <br/>
 
 终极的解决方法：重装系统。
-
-<br/>
 
 以下是我自已测试过的情况：
 
@@ -193,17 +190,17 @@ dism /online /Enable-Feature /featurename:netfx3 /All /LimitAccess /source:"X:\s
 
 [https://grylewicz.pl/wlaczanie-funkcji-net-3-5-i-blad-0x800f081f-w-windows-8-1/](https://grylewicz.pl/wlaczanie-funkcji-net-3-5-i-blad-0x800f081f-w-windows-8-1/)
 
-在没有其他问题的情况下，给打过 KB2966827 的 Windows 8/Server 2012 或 打过 KB2966828 的 Windows 8.1/Server 2012 R2 第一次安装 3.5 时可能会出错：
+在没有其他问题的情况下，给打过 KB2966827 的 Windows 8/Server 2012 或 打过 KB2966828 的 Windows 8.1/Server 2012 R2 第一次安装 .NET Framework 3.5 时可能会出错：
 
 ![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-2edc574fda1161a93716d84403ff8e46.jpg)
 
 解决方法：打上对应操作系统版本的KB3005628，记得要“以管理员身份运行”；
 
-提示：KB3005628 的作用是删除 KB2966827 或 KB2966828；从 [http://go.microsoft.com/fwlink/?linkid=513775](http://go.microsoft.com/fwlink/?linkid=513775) 与 [http://download.windowsupdate.com/d/msdownload/update/software/crup/2014/10/ndpfixit-kb3005628-x64_deabb35b397a39d1d46e1d8aab99bf66fc40052c.exe](http://download.windowsupdate.com/d/msdownload/update/software/crup/2014/10/ndpfixit-kb3005628-x64_deabb35b397a39d1d46e1d8aab99bf66fc40052c.exe) 下载的“ndpfixit-kb3005628-\*.exe”文件不一样，前者运行时会弹出命令行界面，后者没有任何窗口，但看上去两者功能是相同的；它们在运行时都不弹出任何提示，但一段时间后能发现 KB2966827 或 KB2966828 被删除了。
+提示：KB3005628 的作用是删除 KB2966827 或 KB2966828；从 [Update for the .NET Framework 3.5 on Windows 8, Windows 8.1, Windows Server 2012, and Windows Server 2012 R2](https://support.microsoft.com/en-us/help/3005628/update-for-the-net-framework-3-5-on-windows-8-windows-8-1-windows-serv) 与 [Search results for "3005628" - Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=3005628) 下载的“ndpfixit-kb3005628-\*.exe”并不是同一个文件，前者运行时会弹出命令行窗口并立刻消失（不清楚是否有信息被打印出来），后者没有任何窗口，两者运行后不弹出任何提示，但一段时间后能发现 KB2966827 或 KB2966828 被删除了，看上去两者的功能是相同的。
 
 <br/>
 
-* 另外的情况
+* 另外
 
 如果你猜测你的 Windows Update 出问题了，可以尝试：[https://support.microsoft.com/help/10164](https://support.microsoft.com/help/10164)
 
@@ -214,21 +211,31 @@ dism /online /Enable-Feature /featurename:netfx3 /All /LimitAccess /source:"X:\s
 * 操作系统的语言包配置似乎也会影响 .Net Framework 3.5 的安装：  
 [http://winitpro.ru/index.php/2014/10/28/oshibka-0x800f081f-pri-ustanovke-net-framework-3-5-v-windows-8-server-2012/](http://winitpro.ru/index.php/2014/10/28/oshibka-0x800f081f-pri-ustanovke-net-framework-3-5-v-windows-8-server-2012/)
 
+<br/>
+
 * 在 Windows 8 上即使打了 Windows8-RT-KB4019990-x64.msu，也不能安装 4.7：
 
 ![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-7341f6dae3d16d5a40cacc60c23193a4.jpg)
+
+<br/>
 
 * 在 Microsoft 官方文档中 Windows 8 最高并不支持 4.6.2，但实测可以安装：（稳定性未知，而且我忘了具体要怎么做了）
 
 ![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-8e59a1c5f099afaaeb38420b6f54e924.jpg)
 
+<br/>
+
 * 在 Microsoft 官方文档中 Windows Vista SP2 最高并不支持 4.6.1，但实测可以安装：（稳定性未知）
 
 ![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-4acd0223a3f291290c39dad84ed31fa7.jpg)
 
+<br/>
+
 * 在 Microsoft 官方文档中 Windows Vista 最高并不支持 4.7，经 [@Rayista](https://www.zhihu.com/people/abb1e9c50d0cb03b15812f503df208f6) 测试可以安装：（稳定性未知；需要解压安装程序，运行netfx_Full_x86.exe或netfx_Full_x64.exe安装）
 
 ![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-e57c6e226d1b682503147029d0c2401d.jpg)
+
+<br/>
 
 * 在 Microsoft 官方文档中 Windows 10 1507 最高支持 4.7，但我这边有台 LTSB2015(10.0.10240.17488)不能安装，后来重装了系统：（未知的情况）
 
@@ -236,7 +243,7 @@ dism /online /Enable-Feature /featurename:netfx3 /All /LimitAccess /source:"X:\s
 
 <br/>
 
-看起来 Microsoft Docs 也在不断地被完善，这样是最好的。
+* 这里还有更多的问题：[Win8.1无法安装.NET Framework 3.5的解决办法【windows8吧】_百度贴吧](http://tieba.baidu.com/p/3647366816)
 
 ---
 
