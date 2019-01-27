@@ -196,7 +196,13 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"X:\s
 
 解决方法：打上对应操作系统版本的 KB3005628，记得要“以管理员身份运行”；
 
-提示：KB3005628 的作用是删除 KB2966827 或 KB2966828；从 [Update for the .NET Framework 3.5 on Windows 8, Windows 8.1, Windows Server 2012, and Windows Server 2012 R2](https://support.microsoft.com/en-us/help/3005628/update-for-the-net-framework-3-5-on-windows-8-windows-8-1-windows-serv) 与 [Search results for "3005628" - Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=3005628) 下载的“ndpfixit-kb3005628-\*.exe”并不是同一个文件，前者运行时会弹出命令行窗口并立刻消失（不清楚是否有信息被打印出来），后者没有任何窗口，两者运行后不弹出任何提示，但一段时间后能发现 KB2966827 或 KB2966828 被删除了，看上去两者的功能是相同的。
+提示：KB3005628 的作用是删除 KB2966827 或 KB2966828；从 [Update for the .NET Framework 3.5 on Windows 8, Windows 8.1, Windows Server 2012, and Windows Server 2012 R2](https://support.microsoft.com/en-us/help/3005628/update-for-the-net-framework-3-5-on-windows-8-windows-8-1-windows-serv) 下载的“ndpfixit-kb3005628-XNN.exe”与 [Search results for "3005628" - Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=3005628) 下载的“ndpfixit-kb3005628-xNN_\*SHA-1\*.exe”并不是同一个文件，前者运行时会弹出命令行窗口并立刻消失（不清楚是否有信息被打印出来），后者没有任何窗口，两者运行后不弹出任何提示，但一段时间后能发现 KB2966827 或 KB2966828 被删除了，看上去两者的功能是相同的。
+
+\* 使用 Beyond Compare 简单做了个对比，可以看出“ndpfixit-kb3005628-XNN.exe”是 CLI，“ndpfixit-kb3005628-xNN_\*SHA-1\*.exe”是 GUI ，其他的区别可能就需要去做逆向之类的才能发现了：
+
+![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-f12299187273f190eade4431859b9469.png)
+
+![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-1c95a3cc688d89adfd51e6ce6f656678.png)
 
 <br/>
 
@@ -276,6 +282,6 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"X:\s
 
 发布于：21:40 2017/07/13
 
-修改于：23:18 2019/01/27
+修改于：23:30 2019/01/27
 
 禁止转载。
