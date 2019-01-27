@@ -139,7 +139,7 @@
 * 按 Win+X，单击“命令提示符 (管理员)”或“Windows PowerShell (管理员)”，在命令行界面下输入以下命令，等待完成即可。
 
 ``` batch
-dism /online /Enable-Feature /featurename:netfx3 /All /LimitAccess /source:"X:\sources\sxs"
+DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"X:\sources\sxs"
 ```
 
 （“X:\sources\sxs”是你镜像里 sources 目录下 sxs 文件夹的路径；注意符号；可以不区分大小写）
