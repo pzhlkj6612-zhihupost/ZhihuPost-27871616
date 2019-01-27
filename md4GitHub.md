@@ -32,7 +32,7 @@
 - [我该如何安装 .NET Framework](#%E6%88%91%E8%AF%A5%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85-net-framework)
 - [安装 .NET Framework 4](#%E5%AE%89%E8%A3%85-net-framework-4)
 - [.Net Framework 4.7 相关](#net-framework-47-%E7%9B%B8%E5%85%B3)
-- [在 Windows 10、8.1、8 上安装 .NET Framework 3.5](#%E5%9C%A8-windows-10818-%E4%B8%8A%E5%AE%89%E8%A3%85-net-framework-35)
+- [在 Windows 10、Windows 8.1 和 Windows 8 上安装 .NET Framework 3.5](#%E5%9C%A8-windows-10windows-81-%E5%92%8C-windows-8-%E4%B8%8A%E5%AE%89%E8%A3%85-net-framework-35)
 - [关于错误 0x800F081F、0x800F0906、0x800F0907（复杂）](#%E5%85%B3%E4%BA%8E%E9%94%99%E8%AF%AF-0x800f081f0x800f09060x800f0907%E5%A4%8D%E6%9D%82)
 - [其他（杂乱）](#%E5%85%B6%E4%BB%96%E6%9D%82%E4%B9%B1)
 
@@ -44,14 +44,14 @@
 * Windows 10 1809 已预装 4.7.2，可以安装 3.5；
 * Windows 10 1803 已预装 4.7.2，可以安装 3.5；
 * Windows 10 1709 已预装 4.7.1，可以安装 3.5；
-* Windows 10 1703 已预装 4.7，可以安装 3.5、4.7.2；
-* Windows 10 1607 已预装 4.6.2，可以安装 3.5、4.7.2；
-* Windows 10 1511 已预装 4.6.1，可以安装 3.5、4.6.2；
-* Windows 10 1507 已预装 4.6，可以安装 3.5、4.6.2；
-* Windows 8.1 已预装 4.5.1，可以安装 3.5、4.7.2；
-* Windows 8 已预装 4.5，可以安装 3.5、4.6.1；
+* Windows 10 1703 已预装 4.7，可以安装 3.5 和 4.7.2；
+* Windows 10 1607 已预装 4.6.2，可以安装 3.5 和 4.7.2；
+* Windows 10 1511 已预装 4.6.1，可以安装 3.5 和 4.6.2；
+* Windows 10 1507 已预装 4.6，可以安装 3.5 和 4.6.2；
+* Windows 8.1 已预装 4.5.1，可以安装 3.5 和 4.7.2；
+* Windows 8 已预装 4.5，可以安装 3.5 和 4.6.1；
 * Windows 7 SP1 已预装 3.5.1，可以安装 4.7.2；
-* Windows XP 没有预装 .NET Framework，可以安装 3.5、4.0。
+* Windows XP 没有预装 .NET Framework，可以安装 3.5 和 4.0。
 
 注意：
 
@@ -74,7 +74,7 @@
 
 * 对于 .NET Framework 4.X，请参考“安装 .NET Framework 4”部分；
 
-* 对于 .NET Framework 3.5，请参考“在 Windows 10、8.1、8 上安装 .NET Framework 3.5”部分。
+* 对于 .NET Framework 3.5，请参考“在 Windows 10、Windows 8.1 和 Windows 8 上安装 .NET Framework 3.5”部分。
 
 <br/>
 
@@ -90,7 +90,7 @@
 
 # .Net Framework 4.7 相关
 
-由于在 Windows 7 SP1、Server 2008 R2 SP1、Server 2012 中可能缺少 D3DCompiler_47.dll，从而导致 4.7 安装失败：
+由于在 Windows 7、 Windows Server 2008 R2 和 Windows Server 2012 中可能缺少 D3DCompiler_47.dll，4.7 的安装会失败：
 
 ![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-50c47193ff28963e90d09057b46da372.jpg)
 
@@ -113,7 +113,7 @@
 
 <br/>
 
-# 在 Windows 10、8.1、8 上安装 .NET Framework 3.5
+# 在 Windows 10、Windows 8.1 和 Windows 8 上安装 .NET Framework 3.5
 
 微软文档库中**曾经**有过这样一句话：
 
@@ -133,16 +133,16 @@
 
 这一节是对《使用部署映像服务和管理 (DISM) 部署 .NET Framework 3.5》（[https://docs.microsoft.com/windows-hardware/manufacture/desktop/deploy-net-framework-35-by-using-deployment-image-servicing-and-management--dism](https://docs.microsoft.com/windows-hardware/manufacture/desktop/deploy-net-framework-35-by-using-deployment-image-servicing-and-management--dism)）基于我个人理解、并不太准确但可以用的补充。
 
-如果你无法连接到 Internet ，或是下载进度长时间停止不前，再或者是在前述的步骤中遇到了错误，你可以尝试使用对应操作系统版本的镜像文件来安装 .NET Framework 3.5（在安装完系统后就应立即做这项工作）。
+如果你无法连接到 Internet，或是下载进度长时间停止不前，再或者是在前述的步骤中遇到了错误，你可以尝试使用对应操作系统版本的镜像文件来安装 .NET Framework 3.5（在安装完系统后就应立即做这项工作）。
 
-* 双击或右键镜像文件，选择“挂载”（或执行 explorer *.iso），或解压镜像文件，找到 sources\sxs 目录；
+* 双击或右键镜像文件，选择“挂载”（或执行命令“explorer *.iso”），或解压镜像文件，找到“sources\sxs”目录；
 * 按 Win+X，单击“命令提示符 (管理员)”或“Windows PowerShell (管理员)”，在命令行界面下输入以下命令，等待完成即可。
 
 ``` batch
 DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"X:\sources\sxs"
 ```
 
-（“X:\sources\sxs”是你镜像里 sources 目录下 sxs 文件夹的路径；注意符号；可以不区分大小写）
+（“X:\sources\sxs”是你镜像里 sources 目录下 sxs 文件夹的路径；注意要使用半角标点符号；可以不区分大小写）
 
 下图是在 Windows 10 1803 (17134.112) 中进行的安装（使用 Shift+F10 调出 cmd）：
 
@@ -163,7 +163,7 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"X:\s
 * 0x800F0906
 
 1. 由于未连接到 Internet 或用户中断了下载过程而出错；
-2. 在 Windows 8、8.1，使用系统镜像安装 3.5 时，没有使用“/LimitAccess”参数，但指定的源路径有误，且 Windows Update 出错或未连接到 Internet 而出错；
+2. 在 Windows 8 和 Windows 8.1，使用系统镜像安装 3.5 时，没有使用“/LimitAccess”参数，但指定的源路径有误，且 Windows Update 出错或未连接到 Internet 而出错；
 3. 由于组策略设置出错而出错（与 0x800F0907 有所不同）。
 
 <br/>
@@ -190,11 +190,11 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"X:\s
 
 [https://grylewicz.pl/wlaczanie-funkcji-net-3-5-i-blad-0x800f081f-w-windows-8-1/](https://grylewicz.pl/wlaczanie-funkcji-net-3-5-i-blad-0x800f081f-w-windows-8-1/)
 
-在没有其他问题的情况下，给打过 KB2966827 的 Windows 8、Server 2012 ，或者打过 KB2966828 的 Windows 8.1、Server 2012 R2 第一次安装 .NET Framework 3.5 时可能会出错：
+在没有其他问题的情况下，给打过 KB2966827 的 Windows 8 和 Windows Server 2012 ，或者打过 KB2966828 的 Windows 8.1 和 Windows Server 2012 R2 第一次安装 .NET Framework 3.5 时可能会出错：
 
 ![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-2edc574fda1161a93716d84403ff8e46.jpg)
 
-解决方法：打上对应操作系统版本的KB3005628，记得要“以管理员身份运行”；
+解决方法：打上对应操作系统版本的 KB3005628，记得要“以管理员身份运行”；
 
 提示：KB3005628 的作用是删除 KB2966827 或 KB2966828；从 [Update for the .NET Framework 3.5 on Windows 8, Windows 8.1, Windows Server 2012, and Windows Server 2012 R2](https://support.microsoft.com/en-us/help/3005628/update-for-the-net-framework-3-5-on-windows-8-windows-8-1-windows-serv) 与 [Search results for "3005628" - Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=3005628) 下载的“ndpfixit-kb3005628-\*.exe”并不是同一个文件，前者运行时会弹出命令行窗口并立刻消失（不清楚是否有信息被打印出来），后者没有任何窗口，两者运行后不弹出任何提示，但一段时间后能发现 KB2966827 或 KB2966828 被删除了，看上去两者的功能是相同的。
 
@@ -208,8 +208,7 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"X:\s
 
 # 其他（杂乱）
 
-* 操作系统的语言包配置似乎也会影响 .Net Framework 3.5 的安装：  
-[http://winitpro.ru/index.php/2014/10/28/oshibka-0x800f081f-pri-ustanovke-net-framework-3-5-v-windows-8-server-2012/](http://winitpro.ru/index.php/2014/10/28/oshibka-0x800f081f-pri-ustanovke-net-framework-3-5-v-windows-8-server-2012/)
+* 操作系统的语言包配置似乎也会影响 .Net Framework 3.5 的安装：[http://winitpro.ru/index.php/2014/10/28/oshibka-0x800f081f-pri-ustanovke-net-framework-3-5-v-windows-8-server-2012/](http://winitpro.ru/index.php/2014/10/28/oshibka-0x800f081f-pri-ustanovke-net-framework-3-5-v-windows-8-server-2012/)
 
 <br/>
 
@@ -237,7 +236,7 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"X:\s
 
 <br/>
 
-* 在 Microsoft 官方文档中 Windows 10 1507 最高支持 4.7，但我这边有台 LTSB2015(10.0.10240.17488)不能安装，后来重装了系统：（未知的情况）
+* 在 Microsoft 官方文档中 Windows 10 1507 最高支持 4.7，但我这边有台 Windows 10 Enterprise 2015 LTSB (10.0.10240.17488)不能安装，后来重装了系统：（未知的原因）
 
 ![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-91f4a0193012b30e59625c8f61b3c7ba.jpg)
 
@@ -277,6 +276,6 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"X:\s
 
 发布于：21:40 2017/07/13
 
-修改于：22:59 2019/01/27
+修改于：23:18 2019/01/27
 
 禁止转载。
