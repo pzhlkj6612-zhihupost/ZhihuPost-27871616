@@ -26,8 +26,8 @@
 # 目录
 
 * 我需要哪些版本的 .NET Framework
-* 我该如何安装 .NET Framework
 * .NET Framework 版本和依赖关系
+* 我该如何安装 .NET Framework
 * 安装 .NET Framework 4
 * .Net Framework 4.7 相关
 * 在 Windows 10、8.1、8 上安装 .NET Framework 3.5
