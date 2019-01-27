@@ -90,7 +90,7 @@
 
 # .Net Framework 4.7 相关
 
-由于在 Windows 7 SP1、2008 R2 SP1、2012 中可能缺少 D3DCompiler_47.dll，从而导致 4.7 安装失败：
+由于在 Windows 7 SP1、Server 2008 R2 SP1、Server 2012 中可能缺少 D3DCompiler_47.dll，从而导致 4.7 安装失败：
 
 ![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-50c47193ff28963e90d09057b46da372.jpg)
 
@@ -163,7 +163,7 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"X:\s
 * 0x800F0906
 
 1. 由于未连接到 Internet 或用户中断了下载过程而出错；
-2. 在 Windows 8/8.1，使用系统镜像安装 3.5 时，没有使用“/LimitAccess”参数，但指定的源路径有误，且 Windows Update 出错或未连接到 Internet 而出错；
+2. 在 Windows 8、8.1，使用系统镜像安装 3.5 时，没有使用“/LimitAccess”参数，但指定的源路径有误，且 Windows Update 出错或未连接到 Internet 而出错；
 3. 由于组策略设置出错而出错（与 0x800F0907 有所不同）。
 
 <br/>
@@ -190,7 +190,7 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"X:\s
 
 [https://grylewicz.pl/wlaczanie-funkcji-net-3-5-i-blad-0x800f081f-w-windows-8-1/](https://grylewicz.pl/wlaczanie-funkcji-net-3-5-i-blad-0x800f081f-w-windows-8-1/)
 
-在没有其他问题的情况下，给打过 KB2966827 的 Windows 8/Server 2012 或 打过 KB2966828 的 Windows 8.1/Server 2012 R2 第一次安装 .NET Framework 3.5 时可能会出错：
+在没有其他问题的情况下，给打过 KB2966827 的 Windows 8、Server 2012 ，或者打过 KB2966828 的 Windows 8.1、Server 2012 R2 第一次安装 .NET Framework 3.5 时可能会出错：
 
 ![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-2edc574fda1161a93716d84403ff8e46.jpg)
 
@@ -277,6 +277,6 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"X:\s
 
 发布于：21:40 2017/07/13
 
-修改于：21:53 2019/01/27
+修改于：22:57 2019/01/27
 
 禁止转载。
