@@ -131,7 +131,7 @@
 
 **\* 使用系统镜像安装 .NET Framework 3.5（高级）**
 
-这一节是对《使用部署映像服务和管理 (DISM) 部署 .NET Framework 3.5》（[https://docs.microsoft.com/windows-hardware/manufacture/desktop/deploy-net-framework-35-by-using-deployment-image-servicing-and-management--dism](https://docs.microsoft.com/windows-hardware/manufacture/desktop/deploy-net-framework-35-by-using-deployment-image-servicing-and-management--dism)）基于我个人理解、并不太准确但可以用的重写。
+这一节是对《使用部署映像服务和管理 (DISM) 部署 .NET Framework 3.5》（[https://docs.microsoft.com/windows-hardware/manufacture/desktop/deploy-net-framework-35-by-using-deployment-image-servicing-and-management--dism](https://docs.microsoft.com/windows-hardware/manufacture/desktop/deploy-net-framework-35-by-using-deployment-image-servicing-and-management--dism)）基于我个人理解、并不太准确但可以用的补充。
 
 如果你无法连接到 Internet ，或是下载进度长时间停止不前，再或者是在前述的步骤中遇到了错误，你可以尝试使用对应操作系统版本的镜像文件来安装 .NET Framework 3.5（在安装完系统后就应立即做这项工作）。
 
@@ -277,6 +277,6 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"X:\s
 
 发布于：21:40 2017/07/13
 
-修改于：22:57 2019/01/27
+修改于：22:59 2019/01/27
 
 禁止转载。
