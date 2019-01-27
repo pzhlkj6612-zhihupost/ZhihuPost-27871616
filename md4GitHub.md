@@ -144,9 +144,9 @@ dism /online /Enable-Feature /featurename:netfx3 /All /LimitAccess /source:"X:\s
 
 （“X:\sources\sxs”是你镜像里 sources 目录下 sxs 文件夹的路径；注意符号；可以不区分大小写）
 
-下图是在 Windows 8.1 with Update 中进行的安装（使用 Shift+F10 调出 cmd）：
+下图是在 Windows 10 1803 (17134.112) 中进行的安装（使用 Shift+F10 调出 cmd）：
 
-![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-173976a13793484b2254d06fec499b7c.jpg)
+![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-173976a13793484b2254d06fec499b7c.png)
 
 <br/>
 
