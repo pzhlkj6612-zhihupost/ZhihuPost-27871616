@@ -146,7 +146,7 @@ dism /online /Enable-Feature /featurename:netfx3 /All /LimitAccess /source:"X:\s
 
 下图是在 Windows 8.1 with Update 中进行的安装（使用 Shift+F10 调出 cmd）：
 
-![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-afc45751ba6ca4bc257344cde92619f8.jpg)
+![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-173976a13793484b2254d06fec499b7c.jpg)
 
 <br/>
 
@@ -240,6 +240,10 @@ dism /online /Enable-Feature /featurename:netfx3 /All /LimitAccess /source:"X:\s
 * 在 Microsoft 官方文档中 Windows 10 1507 最高支持 4.7，但我这边有台 LTSB2015(10.0.10240.17488)不能安装，后来重装了系统：（未知的情况）
 
 ![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-91f4a0193012b30e59625c8f61b3c7ba.jpg)
+
+<br/>
+
+* 这边测试 cn_windows_embedded_8.1_industry_pro_with_update_x64_dvd_6052079 使用 DISM 安装 3.5 会特别慢，而且最后会失败。
 
 <br/>
 
