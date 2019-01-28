@@ -192,7 +192,7 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"X:\s
 2. 在 Windows 10，使用系统镜像安装3.5时，没有使用“/LimitAccess”参数，但指定的源路径有误，且 Windows Update 出错或未连接到 Internet 而出错；
 3. 在出现过一次 0x800F081F 后，若指定的源路径不变，无论此时源路径是否正确，都会持续出现该错误。解决方法：重启系统（注销没用）。
 
-\* 出现 0x800F081F，原因包括但不限于：路径输入错误、64位系统指定了32位镜像的源（反过来同样）、源路径所属镜像所包含系统的版本号与当前系统的不等（参考：[Operating System Version](https://docs.microsoft.com/windows/desktop/SysInfo/operating-system-version) ）。
+\* 出现 0x800F081F，原因包括但不限于：路径输入错误、64 位系统指定了 32 位镜像的源（反过来同样）、源路径所属镜像所包含系统的版本号与当前系统的不等（参考：[Operating System Version](https://docs.microsoft.com/windows/desktop/SysInfo/operating-system-version) ）。
 
 <br/>
 
