@@ -248,7 +248,7 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"X:\s
 
 <br/>
 
-* 在 Microsoft 官方文档中 Windows Vista 最高并不支持 4.7，经 [@Rayista](https://www.zhihu.com/people/abb1e9c50d0cb03b15812f503df208f6) 测试可以安装：（稳定性未知；需要解压安装程序，运行netfx_Full_x86.exe或netfx_Full_x64.exe安装）
+* 在 Microsoft 官方文档中 Windows Vista 最高并不支持 4.7，经 [@Rayista](https://www.zhihu.com/people/abb1e9c50d0cb03b15812f503df208f6) 测试可以安装：（稳定性未知；需要解压安装程序，运行 netfx_Full_x86.exe 或 netfx_Full_x64.exe 安装）
 
 ![](https://pic1.zhimg.com/v2-e57c6e226d1b682503147029d0c2401d.jpg)
 
