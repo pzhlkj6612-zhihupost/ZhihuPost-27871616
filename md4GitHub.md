@@ -56,7 +56,7 @@
 注意：
 
 * 对于 .NET Framework 4.X，如果上述的某版本无法在你的系统上安装，请尝试安装更低的版本，直到安装成功。如果到 4.0 都没有安装成功，请重装系统。
-* Windows 7 不是 SP1 请尽快升级，参考：[https://support.microsoft.com/help/15090/windows-7-install-service-pack-1-sp1](https://support.microsoft.com/help/15090/windows-7-install-service-pack-1-sp1)
+* Windows 7 不是 SP1 请尽快升级，参考：[https://support.microsoft.com/help/15090](https://support.microsoft.com/help/15090)
 * 除非有必要，不建议继续使用 Windows XP。
 
 <br/>
