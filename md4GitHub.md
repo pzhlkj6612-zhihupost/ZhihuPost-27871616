@@ -61,12 +61,16 @@
 
 <br/>
 
+<br/>
+
 # .NET Framework 版本和依赖关系
 [https://docs.microsoft.com/dotnet/framework/migration-guide/versions-and-dependencies](https://docs.microsoft.com/dotnet/framework/migration-guide/versions-and-dependencies)
 
 > ... 每个新版本的 .NET Framework 都会保留早期版本中的功能并会添加新功能。 CLR 由其自己的版本号标识。 虽然 CLR 版本并不总是递增的，但 .NET Framework 版本号在每次发布时都会递增。 例如，.NET Framework 4、4.5 和更高版本包含 CLR 4，而 .NET Framework 2.0、3.0 和 3.5 包含 CLR 2.0。 （没有版本 3 的 CLR。）
 
-[**C**ommon **L**anguage **R**untime](https://docs.microsoft.com/dotnet/standard/clr)
+[CLR](https://docs.microsoft.com/dotnet/standard/clr) - **C**ommon **L**anguage **R**untime
+
+<br/>
 
 <br/>
 
@@ -78,6 +82,8 @@
 
 <br/>
 
+<br/>
+
 # 安装 .NET Framework 4
 
 当你运行的程序需要 .NET Framework 4.0 及以上版本的环境，但当前系统中并没有时，会报错：
@@ -85,6 +91,8 @@
 ![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-630dcba5364d2845bb2e7fe94fb0e13d.jpg)
 
 去这里下载安装程序：[https://docs.microsoft.com/dotnet/framework/install/guide-for-developers](https://docs.microsoft.com/dotnet/framework/install/guide-for-developers)
+
+<br/>
 
 <br/>
 
@@ -110,6 +118,8 @@
 
 * [http://technet.microsoft.com/library/dn265983.aspx](http://technet.microsoft.com/library/dn265983.aspx)
 * [http://blog.csdn.net/bokutake/article/details/50058763](http://blog.csdn.net/bokutake/article/details/50058763)
+
+<br/>
 
 <br/>
 
@@ -147,6 +157,8 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"X:\s
 下图是在 Windows 10 1803 (17134.112) 中进行的安装（使用 Shift+F10 调出 cmd）：
 
 ![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-173976a13793484b2254d06fec499b7c.png)
+
+<br/>
 
 <br/>
 
@@ -209,6 +221,8 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"X:\s
 * 另外
 
 如果你猜测你的 Windows Update 出问题了，可以尝试：[https://support.microsoft.com/help/10164](https://support.microsoft.com/help/10164)
+
+<br/>
 
 <br/>
 
@@ -282,6 +296,6 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"X:\s
 
 发布于：21:40 2017/07/13
 
-修改于：23:30 2019/01/27
+修改于：08:05 2019/01/28
 
 禁止转载。
