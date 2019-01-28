@@ -278,11 +278,11 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"X:\s
 
 [@Rayista](https://www.zhihu.com/people/abb1e9c50d0cb03b15812f503df208f6) 补充，
 
-[@李夏熙](https://www.zhihu.com/people/a580603e1238b809fcee7b643034d3fe) 提供0x800F081F错误信息：
+[@李夏熙](https://www.zhihu.com/people/a580603e1238b809fcee7b643034d3fe) 提供 0x800F081F 错误信息：
 
 ![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-0315cf4474c4a6f0728e9edc7d5b0dd2.jpg)
 
-[@傅经纬](https://www.zhihu.com/people/c6e2b7029aa83e40e5003a5c16af7181) 提供800F0922错误信息，且网络上有相似问题，
+[@傅经纬](https://www.zhihu.com/people/c6e2b7029aa83e40e5003a5c16af7181) 提供 0x800F0922 错误信息，且网络上有相似问题，
 
 [@墨子 2200MHz](https://www.zhihu.com/people/faf758840a7dfc528c4f620cdddf1460) 整理。
 
@@ -296,6 +296,6 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"X:\s
 
 发布于：21:40 2017/07/13
 
-修改于：08:05 2019/01/28
+修改于：08:06 2019/01/28
 
 禁止转载。
