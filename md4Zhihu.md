@@ -1,4 +1,4 @@
-![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-527a03e73899862b1da8a2a3beb5a990.jpg)
+![](https://pic1.zhimg.com/v2-527a03e73899862b1da8a2a3beb5a990.jpg)
 
 禁止转载。
 
@@ -88,7 +88,7 @@
 
 当你运行的程序需要 .NET Framework 4.0 及以上版本的环境，但当前系统中并没有时，会报错：
 
-![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-630dcba5364d2845bb2e7fe94fb0e13d.jpg)
+![](https://pic1.zhimg.com/v2-630dcba5364d2845bb2e7fe94fb0e13d.jpg)
 
 去这里下载安装程序：[https://docs.microsoft.com/dotnet/framework/install/guide-for-developers](https://docs.microsoft.com/dotnet/framework/install/guide-for-developers)
 
@@ -100,7 +100,7 @@
 
 由于在 Windows 7、 Windows Server 2008 R2 和 Windows Server 2012 中可能缺少 D3DCompiler_47.dll，4.7 的安装会失败：
 
-![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-50c47193ff28963e90d09057b46da372.jpg)
+![](https://pic1.zhimg.com/v2-50c47193ff28963e90d09057b46da372.jpg)
 
 解决方法：打上对应操作系统版本的 KB4019990；
 
@@ -108,11 +108,11 @@
 
 打上补丁后：
 
-![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-36663f1ec4b9c9fe1de7be1caa1550d8.jpg)
+![](https://pic1.zhimg.com/v2-36663f1ec4b9c9fe1de7be1caa1550d8.jpg)
 
 另外，安装 4.7 时最好确保你的系统有一个稳定的 Internet 连接，不然可能会遇到错误：
 
-![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-415656a93a19877065b52df9e9ed6277.jpg)
+![](https://pic1.zhimg.com/v2-415656a93a19877065b52df9e9ed6277.jpg)
 
 相关参考（未验证）：
 
@@ -156,7 +156,7 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"X:\s
 
 下图是在 Windows 10 1803 (17134.112) 中进行的安装（使用 Shift+F10 调出 cmd）：
 
-![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-0feafd97786e832c2d3060f8fe7fa934.jpg)
+![](https://pic1.zhimg.com/v2-0feafd97786e832c2d3060f8fe7fa934.jpg)
 
 <br/>
 
@@ -204,7 +204,7 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"X:\s
 
 在没有其他问题的情况下，给打过 KB2966827 的 Windows 8 和 Windows Server 2012 ，或者打过 KB2966828 的 Windows 8.1 和 Windows Server 2012 R2 第一次安装 .NET Framework 3.5 时可能会出错：
 
-![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-2edc574fda1161a93716d84403ff8e46.jpg)
+![](https://pic1.zhimg.com/v2-2edc574fda1161a93716d84403ff8e46.jpg)
 
 解决方法：打上对应操作系统版本的 KB3005628，记得要“以管理员身份运行”；
 
@@ -212,9 +212,9 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"X:\s
 
 \* 使用 Beyond Compare 简单做了个对比，可以看出“ndpfixit-kb3005628-XNN.exe”是 CLI，“ndpfixit-kb3005628-xNN_\*SHA-1\*.exe”是 GUI ，其他的区别可能就需要去做逆向之类的才能发现了：
 
-![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-a4a56d8a4abe6a4647ff45a292a0cbc5.jpg)
+![](https://pic1.zhimg.com/v2-a4a56d8a4abe6a4647ff45a292a0cbc5.jpg)
 
-![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-176a8653fe27baf44c6fa77130c09eed.jpg)
+![](https://pic1.zhimg.com/v2-176a8653fe27baf44c6fa77130c09eed.jpg)
 
 <br/>
 
@@ -234,31 +234,31 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"X:\s
 
 * 在 Windows 8 上即使打了 Windows8-RT-KB4019990-x64.msu，也不能安装 4.7：
 
-![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-7341f6dae3d16d5a40cacc60c23193a4.jpg)
+![](https://pic1.zhimg.com/v2-7341f6dae3d16d5a40cacc60c23193a4.jpg)
 
 <br/>
 
 * 在 Microsoft 官方文档中 Windows 8 最高并不支持 4.6.2，但实测可以安装：（稳定性未知，而且我忘了具体要怎么做了）
 
-![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-8e59a1c5f099afaaeb38420b6f54e924.jpg)
+![](https://pic1.zhimg.com/v2-8e59a1c5f099afaaeb38420b6f54e924.jpg)
 
 <br/>
 
 * 在 Microsoft 官方文档中 Windows Vista SP2 最高并不支持 4.6.1，但实测可以安装：（稳定性未知）
 
-![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-4acd0223a3f291290c39dad84ed31fa7.jpg)
+![](https://pic1.zhimg.com/v2-4acd0223a3f291290c39dad84ed31fa7.jpg)
 
 <br/>
 
 * 在 Microsoft 官方文档中 Windows Vista 最高并不支持 4.7，经 [@Rayista](https://www.zhihu.com/people/abb1e9c50d0cb03b15812f503df208f6) 测试可以安装：（稳定性未知；需要解压安装程序，运行netfx_Full_x86.exe或netfx_Full_x64.exe安装）
 
-![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-e57c6e226d1b682503147029d0c2401d.jpg)
+![](https://pic1.zhimg.com/v2-e57c6e226d1b682503147029d0c2401d.jpg)
 
 <br/>
 
 * 在 Microsoft 官方文档中 Windows 10 1507 最高支持 4.7，但我这边有台 Windows 10 Enterprise 2015 LTSB (10.0.10240.17488)不能安装，后来重装了系统：（未知的原因）
 
-![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-91f4a0193012b30e59625c8f61b3c7ba.jpg)
+![](https://pic1.zhimg.com/v2-91f4a0193012b30e59625c8f61b3c7ba.jpg)
 
 <br/>
 
@@ -280,7 +280,7 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"X:\s
 
 [@李夏熙](https://www.zhihu.com/people/a580603e1238b809fcee7b643034d3fe) 提供 0x800F081F 错误信息：
 
-![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-0315cf4474c4a6f0728e9edc7d5b0dd2.jpg)
+![](https://pic1.zhimg.com/v2-0315cf4474c4a6f0728e9edc7d5b0dd2.jpg)
 
 [@傅经纬](https://www.zhihu.com/people/c6e2b7029aa83e40e5003a5c16af7181) 提供 0x800F0922 错误信息，且网络上有相似问题，
 
