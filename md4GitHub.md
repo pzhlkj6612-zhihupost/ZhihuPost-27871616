@@ -156,7 +156,7 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"X:\s
 
 下图是在 Windows 10 1803 (17134.112) 中进行的安装（使用 Shift+F10 调出 cmd）：
 
-![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-173976a13793484b2254d06fec499b7c.png)
+![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-0feafd97786e832c2d3060f8fe7fa934.jpg)
 
 <br/>
 
@@ -212,9 +212,9 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"X:\s
 
 \* 使用 Beyond Compare 简单做了个对比，可以看出“ndpfixit-kb3005628-XNN.exe”是 CLI，“ndpfixit-kb3005628-xNN_\*SHA-1\*.exe”是 GUI ，其他的区别可能就需要去做逆向之类的才能发现了：
 
-![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-f12299187273f190eade4431859b9469.png)
+![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-a4a56d8a4abe6a4647ff45a292a0cbc5.jpg)
 
-![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-1c95a3cc688d89adfd51e6ce6f656678.png)
+![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-176a8653fe27baf44c6fa77130c09eed.jpg)
 
 <br/>
 
