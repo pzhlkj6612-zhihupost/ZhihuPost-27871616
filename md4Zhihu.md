@@ -173,7 +173,6 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"X:\s
 以下是我自已测试过的情况：
 
 * 0x800F0906
-
 1. 由于未连接到 Internet 或用户中断了下载过程而出错；
 2. 在 Windows 8 和 Windows 8.1，使用系统镜像安装 3.5 时，没有使用“/LimitAccess”参数，但指定的源路径有误，且 Windows Update 出错或未连接到 Internet 而出错；
 3. 由于组策略设置出错而出错（与 0x800F0907 有所不同）。
@@ -187,7 +186,6 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"X:\s
 <br/>
 
 * 0x800F081F
-
 1. 使用系统镜像安装 3.5 时，使用了“/LimitAccess”参数，由于指定的源路径有误而出错；
 2. 在 Windows 10，使用系统镜像安装 3.5 时，没有使用“/LimitAccess”参数，但指定的源路径有误，且 Windows Update 出错或未连接到 Internet 而出错；
 3. 在出现过一次 0x800F081F 后，若指定的源路径不变，无论此时源路径是否正确，都会持续出现该错误。解决方法：重启系统（注销没用）。
