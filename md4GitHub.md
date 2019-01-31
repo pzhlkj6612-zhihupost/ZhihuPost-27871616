@@ -269,7 +269,9 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"X:\s
 
 <br/>
 
-* 这边测试 cn_windows_embedded_8.1_industry_pro_with_update_x64_dvd_6052079 使用 DISM 安装 3.5 会特别慢，而且最后会失败。
+* 这边测试 cn_windows_embedded_8.1_industry_pro_with_update_x64_dvd_6052079 使用 DISM 安装 3.5 会卡住，大约 20 分钟后提示失败，“错误：87；enable-feature 选项未知”：
+
+![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-77984e5148f4040353f41e83f9e2c79f.png)
 
 <br/>
 
@@ -303,6 +305,6 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"X:\s
 
 发布于：21:40 2017/07/13
 
-修改于：16:48 2019/01/31
+修改于：17:35 2019/01/31
 
 禁止转载。
