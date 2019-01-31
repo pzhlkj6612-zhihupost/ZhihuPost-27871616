@@ -245,25 +245,33 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"X:\s
 
 <br/>
 
-* 在 Microsoft 官方文档中 Windows 8 最高并不支持 4.6.2，但实测可以安装：（稳定性未知，而且我忘了具体要怎么做了）
+* 在 Microsoft 官方文档中 Windows 8 最高并不支持 4.6.2，但实测可以安装：
+
+（稳定性未知，而且我忘了具体要怎么做了）
 
 ![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-8e59a1c5f099afaaeb38420b6f54e924.jpg)
 
 <br/>
 
-* 在 Microsoft 官方文档中 Windows Vista SP2 最高并不支持 4.6.1，但实测可以安装：（稳定性未知）
+* 在 Microsoft 官方文档中 Windows Vista SP2 最高并不支持 4.6.1，但实测可以安装：
+
+（稳定性未知）
 
 ![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-4acd0223a3f291290c39dad84ed31fa7.jpg)
 
 <br/>
 
-* 在 Microsoft 官方文档中 Windows Vista 最高并不支持 4.7，经 [@Rayista](https://www.zhihu.com/people/abb1e9c50d0cb03b15812f503df208f6) 测试可以安装：（稳定性未知；需要解压安装程序，运行 netfx_Full_x86.exe 或 netfx_Full_x64.exe 安装）
+* 在 Microsoft 官方文档中 Windows Vista 最高并不支持 4.7，经 [@Rayista](https://www.zhihu.com/people/abb1e9c50d0cb03b15812f503df208f6) 测试可以安装：
+
+（稳定性未知；需要解压安装程序，运行 netfx_Full_x86.exe 或 netfx_Full_x64.exe 安装）
 
 ![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-e57c6e226d1b682503147029d0c2401d.jpg)
 
 <br/>
 
-* 在 Microsoft 官方文档中 Windows 10 1507 最高支持 4.7，但我这边有台 Windows 10 Enterprise 2015 LTSB (10.0.10240.17488)不能安装，后来重装了系统：（未知的原因）
+* 在 Microsoft 官方文档中 Windows 10 1507 最高支持 4.7，但我这边有台 Windows 10 Enterprise 2015 LTSB (10.0.10240.17488)不能安装，后来重装了系统：
+
+（未知的原因）
 
 ![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-91f4a0193012b30e59625c8f61b3c7ba.jpg)
 
