@@ -34,6 +34,7 @@
 - [.Net Framework 4.7 相关](#net-framework-47-%E7%9B%B8%E5%85%B3)
 - [在 Windows 10、Windows 8.1 和 Windows 8 上安装 .NET Framework 3.5](#%E5%9C%A8-windows-10windows-81-%E5%92%8C-windows-8-%E4%B8%8A%E5%AE%89%E8%A3%85-net-framework-35)
 - [关于错误 0x800F081F、0x800F0906、0x800F0907（复杂）](#%E5%85%B3%E4%BA%8E%E9%94%99%E8%AF%AF-0x800f081f0x800f09060x800f0907%E5%A4%8D%E6%9D%82)
+- [关于错误 0x800F0922](#%E5%85%B3%E4%BA%8E%E9%94%99%E8%AF%AF-0x800f0922)
 - [其他（杂乱）](#%E5%85%B6%E4%BB%96%E6%9D%82%E4%B9%B1)
 
 ----
@@ -216,9 +217,17 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"X:\s
 
 <br/>
 
-* 另外
+<br/>
 
-如果你猜测你的 Windows Update 出问题了，可以尝试：[https://support.microsoft.com/help/10164](https://support.microsoft.com/help/10164)
+# 关于错误 0x800F0922
+
+这个错误并不仅在 .NET Framework 的安装中出现，而是一个通用的 Windows Update 错误，但你仍然可以先跟着这个教程做尝试，注意要找到“0x800F0922”那一段：[https://support.microsoft.com/help/2734782#section-2](https://support.microsoft.com/help/2734782#section-2)
+
+不奏效的话，你还可以看着这个教程做尝试：[https://support.microsoft.com/help/10164](https://support.microsoft.com/help/10164)
+
+还不行的话，看看 Microsoft TechNet 社区里的朋友们都做了哪些尝试，跟着试一试：[https://social.technet.microsoft.com/Forums/en-US/d689ea30-0054-4691-88df-1dac5549ffe2](https://social.technet.microsoft.com/Forums/en-US/d689ea30-0054-4691-88df-1dac5549ffe2)
+
+也可以看看 Mobile01 论坛里的讨论：[https://www.mobile01.com/topicdetail.php?f=300&t=5542860](https://www.mobile01.com/topicdetail.php?f=300&t=5542860)、[https://www.mobile01.com/topicdetail.php?f=300&t=5540162](https://www.mobile01.com/topicdetail.php?f=300&t=5540162)。
 
 <br/>
 
@@ -294,6 +303,6 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"X:\s
 
 发布于：21:40 2017/07/13
 
-修改于：11:44 2019/01/28
+修改于：16:48 2019/01/31
 
 禁止转载。
