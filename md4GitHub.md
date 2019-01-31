@@ -299,6 +299,8 @@ DISM.EXE: No providers were found that support the command(enable-feature). HRES
 
 完整日志请查看 [dism.log](./src/dism.log)，包含在完成各项初次配置、进入桌面前安装失败的和进入桌面后安装成功的所有内容。
 
+类似的问题：[MSU Fails to install with DISM.exe error 87 - Developer Community](https://developercommunity.visualstudio.com/content/problem/31784/httpsakamsvssetuperrorreportsqpackageidmicrosoftwi.html)
+
 <br/>
 
 * 这里还有更多的问题：[Win8.1无法安装.NET Framework 3.5的解决办法【windows8吧】_百度贴吧](http://tieba.baidu.com/p/3647366816)
@@ -331,6 +333,6 @@ DISM.EXE: No providers were found that support the command(enable-feature). HRES
 
 发布于：21:40 2017/07/13
 
-修改于：23:42 2019/01/31
+修改于：23:46 2019/01/31
 
 禁止转载。
