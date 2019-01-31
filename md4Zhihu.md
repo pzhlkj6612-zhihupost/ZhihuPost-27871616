@@ -144,7 +144,7 @@
 
 这一节是对《使用部署映像服务和管理 (DISM) 部署 .NET Framework 3.5》（[https://docs.microsoft.com/windows-hardware/manufacture/desktop/deploy-net-framework-35-by-using-deployment-image-servicing-and-management--dism](https://docs.microsoft.com/windows-hardware/manufacture/desktop/deploy-net-framework-35-by-using-deployment-image-servicing-and-management--dism)）基于我个人理解、并不太准确但可以用的补充。
 
-如果你无法连接到 Internet，或是下载进度长时间停止不前，再或者是在前述的步骤中遇到了错误，你可以尝试使用对应操作系统版本的镜像文件来安装 .NET Framework 3.5（在安装完系统后就应立即做这项工作）。
+如果你无法连接到 Internet，或是下载进度长时间停止不前，再或者是在前述的步骤中遇到了错误，你可以尝试使用对应操作系统版本的镜像文件来安装 .NET Framework 3.5。
 
 * 双击或右键镜像文件，选择“挂载”（或执行命令“explorer *.iso”），或解压镜像文件，找到“sources\sxs”目录；
 * 按 Win+X，单击“命令提示符 (管理员)”或“Windows PowerShell (管理员)”，在命令行界面下输入以下命令，等待完成即可。
@@ -155,7 +155,7 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"X:\s
 
 （“X:\sources\sxs”是你镜像里 sources 目录下 sxs 文件夹的路径；注意要使用半角标点符号；可以不区分大小写）
 
-下图是在 Windows 10 1803 (17134.112) 中进行的安装（使用 Shift+F10 调出 cmd）：
+下图是在 Windows 10 1803 (17134.112) 中进行的安装（使用 Shift+F10 调出 cmd；建议你在进入桌面后再进行 3.5 的安装，不要像我这样搞）：
 
 ![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-173976a13793484b2254d06fec499b7c.png)
 
@@ -277,9 +277,27 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"X:\s
 
 <br/>
 
-* 这边测试 cn_windows_embedded_8.1_industry_pro_with_update_x64_dvd_6052079 使用 DISM 安装 3.5 会卡住，大约 20 分钟后提示失败，“错误：87；enable-feature 选项未知”：
+* 我这里测试 cn_windows_embedded_8.1_industry_pro_with_update_x64_dvd_6052079 使用 DISM 安装 3.5 会卡住，大约 20 分钟后提示失败，“错误：87；enable-feature 选项未知”：
+
+（未知的原因，我提供了日志）
 
 ![](https://raw.githubusercontent.com/pzhlkj6612/ZhihuPost-27871616/master/pic_zhimg_com/v2-77984e5148f4040353f41e83f9e2c79f.png)
+
+完成各项初次配置、进入桌面后，重新执行命令，可以成功启用 .NET Framework 3.5。检查日志文件“%SystemRoot%\Logs\dism.log”，关键内容有：
+```
+...
+DISM Package Manager: PID=3792 TID=1516 Failed to create session classID - waiting for a second and trying again, hr:0x80080005 - CDISMPackageManager::RefreshInstanceAndLock(hr:0x80080005)
+...
+DISM Package Manager: PID=3792 TID=1516 Failed to create session classID - waiting for a second and trying again, hr:0x80080005 - CDISMPackageManager::RefreshInstanceAndLock(hr:0x80080005)
+DISM Package Manager: PID=3792 TID=1516 Failed doing internal initialization - CDISMPackageManager::Initialize(hr:0x80080005)
+DISM Provider Store: PID=3792 TID=1516 Failed to call Initialize method on IDismServicingProvider Interface - CDISMProviderStore::Internal_LoadProvider(hr:0x80080005)
+DISM Provider Store: PID=3792 TID=1516 Failed to Load the provider: C:\Windows\TEMP\ECE1AB77-A6EB-47DB-AF5B-594D79ED8397\CbsProvider.dll. - CDISMProviderStore::Internal_GetProvider(hr:0x80080005)
+...
+DISM.EXE: No providers were found that support the command(enable-feature). HRESULT=80070057
+...
+```
+
+完整日志请查看 [dism.log](./src/dism.log)，包含在完成各项初次配置、进入桌面前安装失败的和进入桌面后安装成功的所有内容。
 
 <br/>
 
@@ -313,6 +331,6 @@ DISM /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"X:\s
 
 发布于：21:40 2017/07/13
 
-修改于：17:35 2019/01/31
+修改于：23:42 2019/01/31
 
 禁止转载。
