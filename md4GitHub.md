@@ -12,7 +12,7 @@
 
 本文章也存在于 GitHub 仓库：
 
-[https://github.com/pzhlkj6612/ZhihuPost-27871616](https://github.com/pzhlkj6612/ZhihuPost-27871616)
+[https://github.com/pzhlkj6612-zhihupost/ZhihuPost-27871616](https://github.com/pzhlkj6612-zhihupost/ZhihuPost-27871616)
 
 <br/>
 
@@ -27,14 +27,14 @@
 # 目录
 
 - [目录](#%E7%9B%AE%E5%BD%95)
-- [我需要哪些版本的 .NET Framework](#%E6%88%91%E9%9C%80%E8%A6%81%E5%93%AA%E4%BA%9B%E7%89%88%E6%9C%AC%E7%9A%84-net-framework)
-- [.NET Framework 版本和依赖关系](#net-framework-%E7%89%88%E6%9C%AC%E5%92%8C%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB)
-- [我该如何安装 .NET Framework](#%E6%88%91%E8%AF%A5%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85-net-framework)
-- [安装 .NET Framework 4](#%E5%AE%89%E8%A3%85-net-framework-4)
-- [.Net Framework 4.7 相关](#net-framework-47-%E7%9B%B8%E5%85%B3)
-- [在 Windows 10、Windows 8.1 和 Windows 8 上安装 .NET Framework 3.5](#%E5%9C%A8-windows-10windows-81-%E5%92%8C-windows-8-%E4%B8%8A%E5%AE%89%E8%A3%85-net-framework-35)
-- [关于错误 0x800F081F、0x800F0906、0x800F0907（复杂）](#%E5%85%B3%E4%BA%8E%E9%94%99%E8%AF%AF-0x800f081f0x800f09060x800f0907%E5%A4%8D%E6%9D%82)
-- [关于错误 0x800F0922](#%E5%85%B3%E4%BA%8E%E9%94%99%E8%AF%AF-0x800f0922)
+- [我需要哪些版本的 .NET Framework](#%E6%88%91%E9%9C%80%E8%A6%81%E5%93%AA%E4%BA%9B%E7%89%88%E6%9C%AC%E7%9A%84-NET-Framework)
+- [.NET Framework 版本和依赖关系](#NET-Framework-%E7%89%88%E6%9C%AC%E5%92%8C%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB)
+- [我该如何安装 .NET Framework](#%E6%88%91%E8%AF%A5%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85-NET-Framework)
+- [安装 .NET Framework 4](#%E5%AE%89%E8%A3%85-NET-Framework-4)
+- [.Net Framework 4.7 相关](#Net-Framework-47-%E7%9B%B8%E5%85%B3)
+- [在 Windows 10、Windows 8.1 和 Windows 8 上安装 .NET Framework 3.5](#%E5%9C%A8-Windows-10Windows-81-%E5%92%8C-Windows-8-%E4%B8%8A%E5%AE%89%E8%A3%85-NET-Framework-35)
+- [关于错误 0x800F081F、0x800F0906、0x800F0907（复杂）](#%E5%85%B3%E4%BA%8E%E9%94%99%E8%AF%AF-0x800F081F0x800F09060x800F0907%E5%A4%8D%E6%9D%82)
+- [关于错误 0x800F0922](#%E5%85%B3%E4%BA%8E%E9%94%99%E8%AF%AF-0x800F0922)
 - [其他（杂乱）](#%E5%85%B6%E4%BB%96%E6%9D%82%E4%B9%B1)
 
 ----
